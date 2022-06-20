@@ -1,14 +1,16 @@
 import React from "react";
-import Header from "./Components/Header/Header";
-import Footer from "./Components/Footer/Footer";
-import BlogEntries from "./Components/BlogEntries/BlogEntries";
+import Header from "./components/Header/Header";
+import BlogEntries from "./components/BlogEntries/BlogEntries";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="w3-content" style={{maxWidth: "1400px"}}>
       <Header/>
-      <BlogEntries/>
-      <Footer/>
+      <div className="w2-row">
+        <BlogEntries/>
+        <Sidebar/>
+      </div>
     </div>
   );
 }
