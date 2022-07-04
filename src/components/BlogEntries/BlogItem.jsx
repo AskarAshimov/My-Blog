@@ -1,7 +1,7 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
 const BlogItem = (props) => {
-  console.log(props)
   return (
     <>
       <div className="w3-card-4 w3-margin w3-white">
@@ -15,7 +15,7 @@ const BlogItem = (props) => {
           <div className="w3-row">
             <div className="w3-col m8 s12">
               <p>
-                <button className="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button>
+                <NavLink to={`/post/${props.id}`}><button className="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></NavLink>
               </p>
             </div>
             <div className="w3-col m4 w3-hide-small">
